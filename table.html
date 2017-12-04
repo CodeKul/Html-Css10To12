@@ -3,6 +3,19 @@
     <head>
         <title>Table</title>
     </head>
+    <style>
+        table{
+           border-collapse: separate;
+        }
+        tr,th{
+            border-collapse: collapse;
+            color: red;
+            font-size: 18px;
+        }
+        tr:hover{
+            background-color: lightblue;
+        }
+    </style>
     <body>
        <h3>Student Information</h3>
         <table border="1" width="70%">
@@ -10,21 +23,22 @@
                 <th>student No</th> <!--table heading -->
                 <th>student Name</th>
                 <th>student Address</th>
-                <th>student Phone</th>
+                <th colspan="2">student Phone</th>
                 <th>student email</th>
             </tr>
             <tr>
-                <td>1</td>
+                <td rowspan="2">1</td>
                 <td>ABC</td><!-- table data -->
                 <td>Pune</td>
                 <td>123456987</td>
+                <td>02024391458</td>
                 <td>abc@gmail.com</td>
             </tr>
             <tr>
-               <td>2</td>
                <td>pqr</td>
                <td>Mumbai</td>
                <td>987456321</td>
+               <td>02024391458</td>
                <td>pqr@gmail.com</td> 
             </tr>
         </table>
